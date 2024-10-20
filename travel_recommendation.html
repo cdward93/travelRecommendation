@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The TravelBloom Agency</title>
+  <link rel="stylesheet" href="./travel_bus.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.33/moment-timezone-with-data.min.js"></script>
+
+
+  <script>
+
+	// without this forced firing of the Search button on blank input initially, the first search always fails (to do anything)
+	// it is part of instantiating and balancing 2 Moment clock objects counting on the second and is a bit of a ... *patch* that is starting to take alot of time
+	// to go back to what the assignment asks for optionally, remove all the clock objects in all files leaving only console.log() of the date from the proper time zone(s)
+
+	// a more robust clearing of the clocks' digits is also needed.  after several searches on top of each other, the digits flicker until reloading the page
+	
+       // Wait for the DOM to be fully loaded
+       document.addEventListener('DOMContentLoaded', function() {
+ 
+       // Get the search button element
+       const searchButton = document.getElementById('search-btn');
+
+       // Add event listener for the click event on the search button
+       searchButton.addEventListener('click', function(event) {
+        // Prevent the default form submission behavior but leave timezones and dates initialized
+       event.preventDefault();
+
+      });
+    });
+  </script>
+
+</head>
+
+
+<body>
+ <nav>
+     <div style="display: flex;">
+     <img src="images/travel-agent-logo-template-design_316488-525.png" width="75" height="75" alt="logo" />
+     <h2><em><strong>TravelBloom</strong></em></h2>
+     </div>
+
+    <ul class="nav-links">
+      <li><a href="./travel_recommendation.html">Home</a></li>
+      <li><a href="./about_us.html">About Us</a></li>
+      <li><a href="./travel_contact.html">Contact Us</a></li>
+    </ul>
+
+    <form action="#" method="get" class="search-container">
+      <input type="text" id="search-input" placeholder="Enter a destination or keyword">
+      <button type="submit" id="search-btn">Search</button>
+      <button type="reset" id="reset-btn">Reset</button>
+    </form>
+   </nav>	
+	
+  <main class="quadrant-container">
+    <div class="left-quadrant-upper">
+	  <h1><em><strong>EXPLORE</strong></em></h1>
+	  <h1><em><strong>DREAM</strong></em></h1>
+	  <h1><em><strong>DESTINATION</strong></em></h1><br><br>
+	 </div>
+	 <div class="right-quadrant-upper">
+	  <img src="images/prompt_to_search_transparent.png"  alt="Image 1" id="image-1">
+	  <figure>
+	  <p><span id="name-1"></span></p><p><span id="description-1"></span></p>
+					
+	  <span id="clock-1" class="clock"></span>
+	  </figure>
+	 </div>
+
+
+	 <div class="left-quadrant-lower">
+	   <h3>It encourages exploration of unfamiliar territories, embracing diverse cultures and landscapes, while pursuing the desired destination that captivates and ignites the sense of wonder.</h3>
+       <button class="hover-button">BOOK NOW</button>
+	 </div>
+	 <div class="right-quadrant-lower">
+	    <img src="images/prompt_to_search_transparent.png" alt="Image 2" id="image-2">
+		 <figure>
+		 <p><span id="name-2"></span></p><p></span><span id="description-2"></span></p>
+					
+		 <span id="clock-2" class="clock"></span>
+		 </figure>
+	  </div>
+	</main>
+
+	
+<footer>
+  <div class="social-media-logos">
+	<a href="#" class="fa fa-facebook" title="Facebook"></a>
+	<a href="#" class="fa fa-twitter" title="Twitter"></a>
+	<a href="#" class="fa fa-instagram" title="Instagram"></a>
+	<a href="#" class="fa fa-youtube" title="Youtube"></a>
+	<a href="#" class="fa fa-snapchat-ghost" title="Snapchat"></a> 
+	<a href="#" class="fa fa-skype" title="Skype"></a> 
+	<a href="#" class="fa fa-android" title="Android"></a> 
+	<a href="#" class="fa fa-dribbble" title="Dribbble"></a> 
+	<a href="#" class="fa fa-vimeo" title="Vimeo"></a> 
+	<a href="#" class="fa fa-tumblr" title="Tumblr"></a> 
+	<a href="#" class="fa fa-vine" title="Vine"></a> 
+	<a href="#" class="fa fa-foursquare" title="Foursquare"></a> 
+	<a href="#" class="fa fa-stumbleupon" title="Stumbleupon"></a> 
+	<a href="#" class="fa fa-flickr" title="Flickr"></a> 
+	<a href="#" class="fa fa-yahoo" title="Yahoo"></a> 
+	<a href="#" class="fa fa-reddit" title="Reddit"></a> 
+	<a href="#" class="fa fa-rss" title="Rss"></a>
+</div>
+</footer>
+
+
+
+<script src="travel_recommendation.js"></script>
+
+</body>
+</html> 
+
+	
+	
+	

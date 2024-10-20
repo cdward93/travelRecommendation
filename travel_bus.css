@@ -1,0 +1,271 @@
+@charset "utf-8";
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url("images/balloon-8141499_1280.webp"); /*  "https://cdn.pixabay.com/photo/2023/07/21/12/11/balloon-8141499_1280.jpg"; orig img in case blocked by server asp */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+main-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px; /* add some space between quadrants */
+}
+
+#image-1,
+#image-2 {
+	width: 100%;
+	height: 350px; /* main control for image size of displayed images */
+	border-radius: 10px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+  object-fit: cover;
+}
+
+#name-1,
+#name-2 {
+  font-family: 'Brush Script MT', cursive;
+}
+
+
+#clock-1,
+#clock-2 {
+	display: inline-block;
+	padding-left: 10px;
+  font-family: 'Brush Script MT', cursive;
+  color: black;
+}
+
+
+main {
+  width: 1920px;
+  height: 1300px;
+  max-width: 2000px;
+}
+
+.quadrant-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	height: calc(80vh - 4px); 
+}
+
+
+.left-quadrant-upper {
+	width: 400px;
+  height: 400px;
+	margin: 10px;
+	padding: 20px;
+    
+}
+
+.right-quadrant-upper {
+  right: 15px;
+ bottom: 615px;
+ width: 1200px;
+ height: 500px;
+ margin: 10px;
+ padding: 20px;
+}
+
+.left-quadrant-lower {
+	width: 400px;
+  height: 400px;
+	margin: 10px;
+	padding: 20px;
+  top: 715px;
+  left: 15px;
+  padding: 20px;
+  margin: 10px;
+ 
+    
+}
+
+.right-quadrant-lower {
+ right: 15px;
+ bottom: 30px;
+ width: 1200px;
+ height: 500px;
+ padding: 20px;
+ margin: 10px;
+ left: 355px;
+}
+
+
+.social-media-logos {
+	position: absolute;
+	bottom: 0px; /* place the logos at the bottom of the page */
+	left: 50%; /* center them horizontally */
+	transform: translateX(-50%); /* adjust for browser quirks */
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-right: 10px;  /* Add some vertical spacing between images */
+	margin-bottom: 20px;
+}
+
+
+.hover-button {
+	background-color: #4CAF50; /* initial button color */
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+	margin-left: 20px; /* offset from the left edge by 50 pixels */
+	font-size: 40px; font-weight: bold
+}
+
+.hover-button:hover {
+	background-color: #8BC34A; /* hover color */
+}
+
+.decorative-button {
+  background-color: navy;
+  color: white;
+}
+
+.clock {
+	font-size: 18px;
+	color: #666;
+	margin-top: 10px;
+  }
+
+
+.social-media-column a {
+	margin-bottom: 10px;
+	display: block;
+}
+
+
+nav {
+    background-color: rgba(0, 0, 0, .2);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+  }
+h2 {
+	font-size: 30px;
+	color: navy;
+}
+h3 {
+	font-size: 20px;
+	color: yellow;  
+	padding-left: 20px;
+}
+
+h1 {
+	font-size: 78px;
+	color: darkred;
+	padding-left: 20px;
+	margin-top: 8px;
+	margin-bottom: 0px;
+}
+
+.employee {
+	font-size: 14px;
+    color: darkblue;
+    padding-left: 20px;
+	  align-items: center;
+}
+  nav ul {
+    list-style-type: none;
+  	align-items: center;
+    padding: 15px;
+	  font-size: 18px;
+  }
+  
+  nav ul li {
+    display: inline;
+	  align-items: center;
+    margin-right: 15px;
+	  font-size: 18px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: rgba(200,78,12,1.00);
+    font-weight: bold;
+  }
+  
+ horizontal-center {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+
+	align-items: center;
+}
+  nav {
+    display: flex;
+    justify-content: space-between; /* aligns elements to the right */
+    padding-right: calc(50% - 50px); /* calculates half of the screen width minus some extra margin (adjust as needed) */
+  }
+
+  .logo-container {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .nav-links li {
+    list-style: none;
+    margin-left: 20px; /* adjust this value for spacing between links */
+  }
+	
+
+.fa {
+  padding: 10px;
+  font-size: 35px;
+  width: 35px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+	.fa-snapchat-ghost { background: #fffc00; color: white; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; }
+.fa-skype { background: #00aff0; color: white; }
+.fa-android { background: #a4c639; color: white; }
+.fa-dribbble { background: #ea4c89; color: white; }
+.fa-vimeo { background: #45bbff; color: white; }
+.fa-tumblr { background: #2c4762; color: white; }
+.fa-vine { background: #00b489; color: white; }
+.fa-foursquare { background: #45bbff; color: white; }
+.fa-stumbleupon { background: #eb4924; color: white; }
+.fa-flickr { background: #f40083; color: white; }
+.fa-yahoo { background: #430297; color: white; }
+.fa-soundcloud { background: #ff5500; color: white; }
+.fa-reddit { background: #ff5700; color: white; }
+.fa-rss { background: #ff6600; color: white; } 
+
